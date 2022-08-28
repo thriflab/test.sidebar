@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Giffi</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-google'></i>
+                <div class="logo_name">G | Blog</div>
+            </div>
+            <a href="#">
+                <i class='bx bx-menu' id="btn"></i>
+            </a>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <input type="text" placeholder="Search">
+                </a>
+                <span class="tooltip">Search</span>
+            </li>
+            <br>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="links_name">Social Media</span>
+                </a>
+                <span class="tooltip">Social Media</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-comment'></i>
+                    <span class="links_name">History</span>
+                </a>
+                <span class="tooltip">History</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-credit-card-front'></i>
+                    <span class="links_name">Credit</span>
+                </a>
+                <span class="tooltip">Credit</span>
+            </li>
+        </ul>
+    </div>
+    <div class="home_content">
+        <div class="text">Welcome</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector("bx-search");
+
+        btn.onclick = function () {
+            sidebar.classList.toggle(active);
+        }
+        searchBtn.onclick = function () {
+            sidebar.classList.toggle(active);
+        }
+    </script>
+
+
+</body>
+
+</html>
